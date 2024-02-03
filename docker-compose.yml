@@ -1,10 +1,15 @@
 version: '3'
 services:
   jupyter:
+    user: "root"
     build:
       context: .
       dockerfile: Dockerfile.jupyter
     ports:
       - "8888:8888"
     volumes:
-      - ./data:/home/jovyan/data
+      - ./work:/home/jovyan/work
+    command: "start-notebook.py --IdentityProvider.token=''"
+    environment:
+      CHOWN_EXTRA: "/home/jovyan/work"
+      CHOWN_EXTRA_OPTS: "-R"
