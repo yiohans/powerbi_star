@@ -5,7 +5,7 @@ JUPYTER_TOKEN = "your token"
 
 ## Build and Run container with pyspark notebook
 ```
-docker compose up --build
+docker compose up -d --build
 ```
 
 ## Download data
