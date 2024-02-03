@@ -9,7 +9,7 @@ services:
       - "8888:8888"
     volumes:
       - ./work:/home/jovyan/work
-    command: "start-notebook.py --IdentityProvider.token=''"
+    command: "start-notebook.py --IdentityProvider.token=${JUPYTER_TOKEN}"
     environment:
       CHOWN_EXTRA: "/home/jovyan/work"
       CHOWN_EXTRA_OPTS: "-R"
