@@ -1,0 +1,3 @@
+FROM quay.io/jupyter/pyspark-notebook
+
+COPY ../jars/*.jar $SPARK_HOME/jars/
