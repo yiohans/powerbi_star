@@ -2,3 +2,4 @@
 work/
 pyspark-test.ipynb
 parquet/
+postgres_dw
