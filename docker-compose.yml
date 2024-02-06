@@ -9,6 +9,7 @@ services:
     restart: unless-stopped
     ports:
       - "8888:8888"
+      - "4040:4040"
     volumes:
       - ./work:/home/jovyan/work
       - ./parquet:/home/jovyan/parquet
