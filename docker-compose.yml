@@ -20,13 +20,13 @@ services:
 
   dw:
     image: postgres:15-alpine
-    container_name: dw
+    container_name: dw_star
     restart: unless-stopped
     ports:
         - "55555:5432"
     volumes:
         - ./postgres_dw:/var/lib/postgresql/data
     environment:
-        POSTGRES_PASSWORD: postgres
-        POSTGRES_USER: postgres
-        POSTGRES_DB: postgres
+        POSTGRES_PASSWORD: star 
+        POSTGRES_USER: star 
+        POSTGRES_DB: star 
