@@ -26,7 +26,8 @@ services:
         - "55555:5432"
     volumes:
         - ./postgres_dw:/var/lib/postgresql/data
+        - ./pg/postgres/seeds:/docker-entrypoint-initdb.d
     environment:
-        POSTGRES_PASSWORD: star 
-        POSTGRES_USER: star 
-        POSTGRES_DB: star 
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_USER: postgres
+        POSTGRES_DB: postgres
