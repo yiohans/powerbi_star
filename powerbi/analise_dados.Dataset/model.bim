@@ -1,0 +1,1538 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"star dim_candidato\",\"star dim_cargo\",\"star dim_coligacao\",\"star dim_destinacao_voto\",\"star dim_ds_eleicao\",\"star dim_municipio\",\"star dim_partido\",\"star dim_situacao_candidatura\",\"star dim_situacaof_turno\",\"star dim_tp_agrangencia\",\"star dim_turno\",\"star dim_voto_transito\",\"star dim_zona\",\"star tabela_fato\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.124.2028.0 (23.12)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "61a368f0-4968-4c46-bca1-05a17f43374b",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "sk_candidato",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_candidato",
+        "toTable": "star dim_candidato"
+      },
+      {
+        "name": "6f10eb31-cda5-44c1-b87f-341105306846",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "sk_cargo",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_cargo",
+        "toTable": "star dim_cargo"
+      },
+      {
+        "name": "1714a356-72e3-40ca-ae17-26cf3b9da289",
+        "fromColumn": "sk_coligacao",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_coligacao",
+        "toTable": "star dim_coligacao"
+      },
+      {
+        "name": "f451a4d4-6213-43b2-9902-4cb79b7e3303",
+        "fromColumn": "sk_destinacao_voto",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_destinacao_voto",
+        "toTable": "star dim_destinacao_voto"
+      },
+      {
+        "name": "90cf87cb-f855-4da8-a69d-9ed5ea70bea9",
+        "fromColumn": "sk_ds_eleicao",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_ds_eleicao",
+        "toTable": "star dim_ds_eleicao"
+      },
+      {
+        "name": "94c1bc19-8531-4bd2-a937-73e84e45dbaf",
+        "fromColumn": "sk_municipio",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_municipio",
+        "toTable": "star dim_municipio"
+      },
+      {
+        "name": "abc0e70d-4431-4114-bee4-551e22b2f2fe",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "sk_partido",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_partido",
+        "toTable": "star dim_partido"
+      },
+      {
+        "name": "b05bee12-a9b5-4f5f-9c5a-e8020dc0633f",
+        "fromColumn": "sk_situacao_candidatura",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_situacao_candidatura",
+        "toTable": "star dim_situacao_candidatura"
+      },
+      {
+        "name": "90d48928-c700-4ea6-9dc9-294f4432f181",
+        "fromColumn": "sk_situacaof_turno",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_situacaof_turno",
+        "toTable": "star dim_situacaof_turno"
+      },
+      {
+        "name": "bf049ce0-60b9-4e6e-9731-5a27e56dda87",
+        "fromColumn": "sk_tp_agrangencia",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_tp_agrangencia",
+        "toTable": "star dim_tp_agrangencia"
+      },
+      {
+        "name": "f2dee7a0-099f-4e9d-8da8-2a13e6ac0700",
+        "fromColumn": "sk_turno",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_turno",
+        "toTable": "star dim_turno"
+      },
+      {
+        "name": "b839c035-36ee-4fb1-80a1-9c5faf686563",
+        "fromColumn": "sk_voto_transito",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_voto_transito",
+        "toTable": "star dim_voto_transito"
+      },
+      {
+        "name": "5512ccbf-59ad-49b4-bddf-87b02c86b84c",
+        "fromColumn": "sk_zona",
+        "fromTable": "star tabela_fato",
+        "toColumn": "sk_zona",
+        "toTable": "star dim_zona"
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "DateTableTemplate_58ecf2f1-62fe-4b61-a686-3604b19a48eb",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "0a4480f3-8d9b-4063-adf5-0cf80cc5c694",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "953defd1-0392-4a34-8dfb-86c99751400f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b8dfbe16-cc40-4184-9e5e-8af6cb8ea059",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "f6b87201-cd6f-45d4-acd2-ec3452d3dab6",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "58bcc6b8-9b3d-4084-b679-cd064694b456",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "64686a21-d6c2-4e11-9736-59d3ff82b72b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "92dfe2f9-6655-424d-99ef-29b898dfdb4a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "cb613258-4e3e-4d35-8ae3-b33d3e0e4934",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "1c0d05d2-8c74-4c8e-8042-523949e3167b",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "c4b2530d-83bf-4da6-a343-3b6dd7fb2ee3",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "18ce15a8-d202-4c23-9a69-65fb7b96849c",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "6fb46eaf-6857-4c5b-b661-97e8674b1f1f"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "9f9ca9c2-13e0-47ef-89b7-dc9f697cb73e",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_58ecf2f1-62fe-4b61-a686-3604b19a48eb",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_candidato",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NM_CANDIDATO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b719990d-9a88-4282-b017-23853cdcb551",
+            "sourceColumn": "NM_CANDIDATO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NR_CANDIDATO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "70ac6d87-294a-462e-94e5-0b879d35a57d",
+            "sourceColumn": "NR_CANDIDATO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NM_URNA_CANDIDATO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9755e2ec-6a52-4532-825b-fd79b0914848",
+            "sourceColumn": "NM_URNA_CANDIDATO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_candidato",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "263e5e44-e82a-4ab4-aa30-6a4d7ef84a29",
+            "sourceColumn": "sk_candidato",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e695e1b8-a77d-4ad9-91e2-b6ee4c4054e2",
+        "partitions": [
+          {
+            "name": "star dim_candidato",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_candidato = Fonte{[Schema=\"star\",Item=\"dim_candidato\"]}[Data]",
+                "in",
+                "    star_dim_candidato"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_cargo",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DS_CARGO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b820513c-5600-4343-931d-53e126088bc3",
+            "sourceColumn": "DS_CARGO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_cargo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7750b8b5-b988-4563-bcac-afe2523c4f13",
+            "sourceColumn": "sk_cargo",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "de169ab3-ae12-4015-9b5c-047dabdf8252",
+        "partitions": [
+          {
+            "name": "star dim_cargo",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_cargo = Fonte{[Schema=\"star\",Item=\"dim_cargo\"]}[Data]",
+                "in",
+                "    star_dim_cargo"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_coligacao",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NM_COLIGACAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7ed0301d-9ae4-48a0-b1ed-d7356b281683",
+            "sourceColumn": "NM_COLIGACAO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DS_COMPOSICAO_COLIGACAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "06b0baeb-2112-4507-b41c-a8b2a13a55d8",
+            "sourceColumn": "DS_COMPOSICAO_COLIGACAO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_coligacao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f65de368-0d4f-490f-9a06-e4df70cf0b19",
+            "sourceColumn": "sk_coligacao",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ea2e6971-0c89-4078-b9a7-105dbb0b6570",
+        "partitions": [
+          {
+            "name": "star dim_coligacao",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_coligacao = Fonte{[Schema=\"star\",Item=\"dim_coligacao\"]}[Data]",
+                "in",
+                "    star_dim_coligacao"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_destinacao_voto",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NM_TIPO_DESTINACAO_VOTOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5e0a2a5f-7744-4847-b689-6056521d85ea",
+            "sourceColumn": "NM_TIPO_DESTINACAO_VOTOS",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_destinacao_voto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ee0fe584-e89e-4033-a888-e0045206c1e4",
+            "sourceColumn": "sk_destinacao_voto",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "34ff9e4f-9538-4e08-bd92-b0d351280fdc",
+        "partitions": [
+          {
+            "name": "star dim_destinacao_voto",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_destinacao_voto = Fonte{[Schema=\"star\",Item=\"dim_destinacao_voto\"]}[Data]",
+                "in",
+                "    star_dim_destinacao_voto"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_ds_eleicao",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DS_ELEICAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "706f0ab1-76b4-465a-96cb-f7116eb91a03",
+            "sourceColumn": "DS_ELEICAO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_ds_eleicao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a497ad19-2f7d-420f-868a-d03511f441ec",
+            "sourceColumn": "sk_ds_eleicao",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "85ba210d-8d65-46cc-88d1-e1fb7d8eea4a",
+        "partitions": [
+          {
+            "name": "star dim_ds_eleicao",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_ds_eleicao = Fonte{[Schema=\"star\",Item=\"dim_ds_eleicao\"]}[Data]",
+                "in",
+                "    star_dim_ds_eleicao"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_municipio",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SG_UF",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3a7e92b9-1529-40df-bf51-fec291d2502f",
+            "sourceColumn": "SG_UF",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NM_MUNICIPIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4d739ae6-941f-4beb-aa07-719fe6b4c75c",
+            "sourceColumn": "NM_MUNICIPIO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_municipio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8aa24132-47a9-4304-b7ed-b82411905878",
+            "sourceColumn": "sk_municipio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NOME_ESTADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    'star dim_municipio'[SG_UF],",
+              "    \"AC\", \"Acre\",",
+              "    \"AL\", \"Alagoas\",",
+              "    \"AM\", \"Amazonas\",",
+              "    \"AP\", \"Amapá\",",
+              "    \"BA\", \"Bahia\",",
+              "    \"CE\", \"Ceará\",",
+              "    \"DF\", \"Distrito Federal\",",
+              "    \"ES\", \"Espírito Santo\",",
+              "    \"GO\", \"Goiás\",",
+              "    \"MA\", \"Maranhão\",",
+              "    \"MG\", \"Minas Gerais\",",
+              "    \"MS\", \"Mato Grosso do Sul\",",
+              "    \"MT\", \"Mato Grosso\",",
+              "    \"PA\", \"Pará\",",
+              "    \"PB\", \"Paraíba\",",
+              "    \"PE\", \"Pernambuco\",",
+              "    \"PI\", \"Piauí\",",
+              "    \"PR\", \"Paraná\",",
+              "    \"RJ\", \"Rio de Janeiro\",",
+              "    \"RN\", \"RN\",",
+              "    \"RO\", \"Rondônia\",",
+              "    \"RR\", \"Roraima\",",
+              "    \"RS\", \"Rio Grande do Sul\",",
+              "    \"SC\", \"Santa Catarina\",",
+              "    \"SE\", \"Sergipe\",",
+              "    \"SP\", \"São Paulo\",",
+              "    \"TO\", \"Tocantins\",",
+              "    \"ZZ\", \"EXTERNO\",  -- Adicionando a condição para \"ZZ\"",
+              "    BLANK()  -- Adicione esta linha para tratar valores nulos, caso existam",
+              ")",
+              "",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "328979ae-a8cc-4860-a12f-0d1384bee3e7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "ESTADO_BRASIL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    'star dim_municipio'[NOME_ESTADO] = \"ZZ\", \"EXTERNO\",",
+              "    TRUE(), \"BRASIL - \" & 'star dim_municipio'[NOME_ESTADO]",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "2d3892f1-41b8-4554-b06d-2afeaf2e2e3e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "REGIAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    'star dim_municipio'[SG_UF],",
+              "    \"AC\", \"Norte\",",
+              "    \"AL\", \"Nordeste\",",
+              "    \"AM\", \"Norte\",",
+              "    \"AP\", \"Norte\",",
+              "    \"BA\", \"Nordeste\",",
+              "    \"CE\", \"Nordeste\",",
+              "    \"DF\", \"Centro-Oeste\",",
+              "    \"ES\", \"Sudeste\",",
+              "    \"GO\", \"Centro-Oeste\",",
+              "    \"MA\", \"Nordeste\",",
+              "    \"MG\", \"Sudeste\",",
+              "    \"MS\", \"Centro-Oeste\",",
+              "    \"MT\", \"Centro-Oeste\",",
+              "    \"PA\", \"Norte\",",
+              "    \"PB\", \"Nordeste\",",
+              "    \"PE\", \"Nordeste\",",
+              "    \"PI\", \"Nordeste\",",
+              "    \"PR\", \"Sul\",",
+              "    \"RJ\", \"Sudeste\",",
+              "    \"RN\", \"Nordeste\",",
+              "    \"RO\", \"Norte\",",
+              "    \"RR\", \"Norte\",",
+              "    \"RS\", \"Sul\",",
+              "    \"SC\", \"Sul\",",
+              "    \"SE\", \"Nordeste\",",
+              "    \"SP\", \"Sudeste\",",
+              "    \"TO\", \"Norte\",",
+              "    \"ZZ\", \"Exterior\",  -- Adicionando a condição para \"ZZ\"",
+              "    BLANK()  -- Adicione esta linha para tratar valores nulos, caso existam",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "46819d7e-87aa-48ca-90e5-e9424de57663",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "8556e966-9b4c-4b8a-a6ad-3a65a34e0cf4",
+        "partitions": [
+          {
+            "name": "star dim_municipio",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_municipio = Fonte{[Schema=\"star\",Item=\"dim_municipio\"]}[Data]",
+                "in",
+                "    star_dim_municipio"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_partido",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SG_PARTIDO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a3041285-6e0e-438d-b8e5-7419d20bf92f",
+            "sourceColumn": "SG_PARTIDO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NM_PARTIDO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ce87ccfe-047b-4cf4-9044-a8f29c3f9958",
+            "sourceColumn": "NM_PARTIDO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NR_PARTIDO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bd943c0e-aef4-4db6-ab38-eb03b85763ab",
+            "sourceColumn": "NR_PARTIDO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_partido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7520c8d2-6c02-429a-8c4f-2fce4f9b865d",
+            "sourceColumn": "sk_partido",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b33f88e4-eccb-4034-8185-fa175373945a",
+        "partitions": [
+          {
+            "name": "star dim_partido",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_partido = Fonte{[Schema=\"star\",Item=\"dim_partido\"]}[Data]",
+                "in",
+                "    star_dim_partido"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_situacao_candidatura",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DS_SITUACAO_CANDIDATURA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "870d0de4-84ed-4388-84eb-1a06d5005ed8",
+            "sourceColumn": "DS_SITUACAO_CANDIDATURA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_situacao_candidatura",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "40dd7a4a-0751-447b-9557-366e07e987b4",
+            "sourceColumn": "sk_situacao_candidatura",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fe20cc7d-9cea-467a-9cb0-bc863df8beb5",
+        "partitions": [
+          {
+            "name": "star dim_situacao_candidatura",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_situacao_candidatura = Fonte{[Schema=\"star\",Item=\"dim_situacao_candidatura\"]}[Data]",
+                "in",
+                "    star_dim_situacao_candidatura"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_situacaof_turno",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DS_SIT_TOT_TURNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "20ae2b75-4cde-4c90-a4d3-eca8a4e4f096",
+            "sourceColumn": "DS_SIT_TOT_TURNO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_situacaof_turno",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "65b43094-67ad-4ecb-b071-c99e60997d3b",
+            "sourceColumn": "sk_situacaof_turno",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "0b2dd1be-a999-4422-8e1f-621db69f845b",
+        "partitions": [
+          {
+            "name": "star dim_situacaof_turno",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_situacaof_turno = Fonte{[Schema=\"star\",Item=\"dim_situacaof_turno\"]}[Data]",
+                "in",
+                "    star_dim_situacaof_turno"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_tp_agrangencia",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "TP_ABRANGENCIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2a0fc46b-6572-459b-8d00-f550b5113b13",
+            "sourceColumn": "TP_ABRANGENCIA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_tp_agrangencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8c0b5b4c-4526-40fa-ae42-2bd480cd7987",
+            "sourceColumn": "sk_tp_agrangencia",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "1f61e82f-c28c-4fe6-8262-75ddd69a485f",
+        "partitions": [
+          {
+            "name": "star dim_tp_agrangencia",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_tp_agrangencia = Fonte{[Schema=\"star\",Item=\"dim_tp_agrangencia\"]}[Data]",
+                "in",
+                "    star_dim_tp_agrangencia"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_turno",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NR_TURNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ae3ce21a-0a19-4739-beef-e0248bda8f51",
+            "sourceColumn": "NR_TURNO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_turno",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "26fdbc2b-71ef-45dc-9109-377e9fda0786",
+            "sourceColumn": "sk_turno",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b387327f-bc6b-4fce-8a75-e041e186225b",
+        "partitions": [
+          {
+            "name": "star dim_turno",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_turno = Fonte{[Schema=\"star\",Item=\"dim_turno\"]}[Data]",
+                "in",
+                "    star_dim_turno"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_voto_transito",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ST_VOTO_EM_TRANSITO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "31819d46-5dab-465f-be3f-d6b0f5d109b9",
+            "sourceColumn": "ST_VOTO_EM_TRANSITO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_voto_transito",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "11dc72ca-47ab-4f75-b62a-9d0d1715cd4f",
+            "sourceColumn": "sk_voto_transito",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "85380233-12f4-469b-adeb-794bf5ba98f9",
+        "partitions": [
+          {
+            "name": "star dim_voto_transito",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_voto_transito = Fonte{[Schema=\"star\",Item=\"dim_voto_transito\"]}[Data]",
+                "in",
+                "    star_dim_voto_transito"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star dim_zona",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NR_ZONA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "496a2c1d-1454-452a-b8f9-f02adf86f442",
+            "sourceColumn": "NR_ZONA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_zona",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "abb19494-42a0-4857-a790-1b372076e3b5",
+            "sourceColumn": "sk_zona",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "35c28721-6445-4db1-a987-450b9e77a207",
+        "partitions": [
+          {
+            "name": "star dim_zona",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_dim_zona = Fonte{[Schema=\"star\",Item=\"dim_zona\"]}[Data]",
+                "in",
+                "    star_dim_zona"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "star tabela_fato",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "QT_VOTOS_NOMINAIS_VALIDOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2cf24649-5b46-48aa-a564-730e20d744c6",
+            "sourceColumn": "QT_VOTOS_NOMINAIS_VALIDOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "QT_VOTOS_NOMINAIS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f199ba45-61d2-4b0a-a19b-e158f00fdf74",
+            "sourceColumn": "QT_VOTOS_NOMINAIS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "sk_municipio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c62d1a67-749b-43f3-83b7-d11144c6713c",
+            "sourceColumn": "sk_municipio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_cargo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a2691e56-8589-4190-ad2e-6d69ab021fef",
+            "sourceColumn": "sk_cargo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_ds_eleicao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "53eec412-c88f-43ef-86b5-6a5a6142d5ca",
+            "sourceColumn": "sk_ds_eleicao",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_partido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b8d21599-9a40-4f4e-9210-1d9c41db8d85",
+            "sourceColumn": "sk_partido",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_candidato",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b4536afb-8c53-43c2-88fb-f7ca53fc93d9",
+            "sourceColumn": "sk_candidato",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_turno",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b9050112-5c35-43d0-b5da-983dd7989ee1",
+            "sourceColumn": "sk_turno",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_tp_agrangencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "49985111-8b97-4aef-9402-0fd47e932ad8",
+            "sourceColumn": "sk_tp_agrangencia",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_zona",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "04a3338a-d4cb-4290-8845-2518bf40d224",
+            "sourceColumn": "sk_zona",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_situacao_candidatura",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "37a16f97-ca9a-421d-ab50-a69cb5c4528b",
+            "sourceColumn": "sk_situacao_candidatura",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_coligacao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a94c8b9a-7c1c-460e-92d6-41e3dc04158d",
+            "sourceColumn": "sk_coligacao",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_voto_transito",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8ba521cd-2393-4fed-9d13-64fa7f078b92",
+            "sourceColumn": "sk_voto_transito",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_situacaof_turno",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d872a2ec-519f-4d4c-8cd3-1f785a723fda",
+            "sourceColumn": "sk_situacaof_turno",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_destinacao_voto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "26fc0d91-b07d-42e7-8957-5d62bedfe86b",
+            "sourceColumn": "sk_destinacao_voto",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "55a2abe6-2fd8-42ef-bda3-e4b9f77eb0ee",
+        "partitions": [
+          {
+            "name": "star tabela_fato",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PostgreSQL.Database(\"localhost:55555\", \"star\"),",
+                "    star_tabela_fato = Fonte{[Schema=\"star\",Item=\"tabela_fato\"]}[Data],",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(star_tabela_fato,{{\"QT_VOTOS_NOMINAIS_VALIDOS\", Int64.Type}, {\"QT_VOTOS_NOMINAIS\", Int64.Type}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

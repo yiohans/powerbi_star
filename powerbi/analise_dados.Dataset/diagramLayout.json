@@ -1,0 +1,204 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 220.00000000000009
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 10,
+            "y": 606.3789748391124
+          },
+          "nodeIndex": "star dim_candidato",
+          "nodeLineageTag": "d9091f62-44cc-46b9-8532-215d30c26cd7",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 894.25410318672562,
+            "y": 903.62381544333425
+          },
+          "nodeIndex": "star dim_cargo",
+          "nodeLineageTag": "01a11b58-874b-497a-9512-a5cbf1e0c801",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 85.966407931909828,
+            "y": 1017.2106633132136
+          },
+          "nodeIndex": "star dim_coligacao",
+          "nodeLineageTag": "db477130-bf67-4923-899d-6fad324970df",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 372.07939968066449,
+            "y": 1222.3789667882515
+          },
+          "nodeIndex": "star dim_destinacao_voto",
+          "nodeLineageTag": "6121f83f-265f-41da-91a4-23365b708b79",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 730.81432988492816,
+            "y": 180.08587400455212
+          },
+          "nodeIndex": "star dim_ds_eleicao",
+          "nodeLineageTag": "df586861-c847-4787-9325-c357235feb8f",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 207.54935442361247,
+            "y": 219.79043378904828
+          },
+          "nodeIndex": "star dim_municipio",
+          "nodeLineageTag": "02573db5-f74e-4abb-a49b-d44a6d29b472",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 442.88796822823588,
+            "y": -10
+          },
+          "nodeIndex": "star dim_partido",
+          "nodeLineageTag": "996bcdd3-f25f-4ac4-aef0-a6436a1e3383",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 951.14948345997141,
+            "y": 361.28034116424089
+          },
+          "nodeIndex": "star dim_situacao_candidatura",
+          "nodeLineageTag": "cbda6301-e9f1-4324-b975-2b52ddd288ef",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 659.12837917786237,
+            "y": 1085.1025505210328
+          },
+          "nodeIndex": "star dim_situacaof_turno",
+          "nodeLineageTag": "20d66557-af33-42a5-82ed-bda9e50104fe",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10.042080362186596,
+            "y": 835.69291067306062
+          },
+          "nodeIndex": "star dim_tp_agrangencia",
+          "nodeLineageTag": "0e325806-aa2d-4f0b-9e3e-dffcd7aa2641",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 951.20505249679911,
+            "y": 723.95069388097022
+          },
+          "nodeIndex": "star dim_turno",
+          "nodeLineageTag": "d3bbf6ed-87df-4f75-b9c5-66b8ab60519a",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 951.21014228905369,
+            "y": 542.837308131943
+          },
+          "nodeIndex": "star dim_voto_transito",
+          "nodeLineageTag": "9ad32866-50ef-4d60-9885-669ada19a4c3",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10.048589278062593,
+            "y": 424.8165969918598
+          },
+          "nodeIndex": "star dim_zona",
+          "nodeLineageTag": "4cce368e-cf23-4bbf-99e7-8bdf0170c9fe",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 608.01967692759035,
+            "y": 548.11260825414138
+          },
+          "nodeIndex": "star tabela_fato",
+          "nodeLineageTag": "06502f0c-4a86-4d7a-8985-ac1ece85709d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 99.999999999999957,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
