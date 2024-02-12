@@ -1,4 +1,5 @@
-version: '3'
+include:
+  - spark_airflow/docker-compose.yml
 services:
   jupyter:
     user: "root"
