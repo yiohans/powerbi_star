@@ -21,7 +21,7 @@ services:
 
   dw:
     image: postgres:15-alpine
-    container_name: dw_star
+    container_name: dw
     restart: unless-stopped
     ports:
         - "55555:5432"
