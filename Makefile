@@ -47,3 +47,7 @@ stop: export_connections
 .PHONY: down
 down: export_connections
 	docker compose down
+
+.PHONY: convert_notebooks
+convert_notebooks:
+	docker exec jupyter nbconvert --to script /*.ipynb
