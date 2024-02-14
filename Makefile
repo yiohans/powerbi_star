@@ -4,14 +4,14 @@ all: up
 
 .PHONY: update_submodules
 update_submodules:
-	@if [ -d "spark_airflow" ]; then \
+	@if [ ! -d "spark_airflow" ]; then \
 		git submodule update --init --recursive; \
 	else \
 		git submodule update --remote --merge; \
 	fi
 
 .PHONY: setup_directory_permissions
-setup_directory_permissions:
+setup_directory_permissions: update_submodules
 	@if [ ! -d "spark_airflow/dags" ]; then \
 		mkdir  spark_airflow/dags/; \
 	fi
@@ -36,11 +36,11 @@ import_connections: setup_directory_permissions
 	docker exec airflow-webserver airflow connections import exports/airflow_connections.json
 
 .PHONY: build
-build: update_submodules setup_directory_permissions
+build: setup_directory_permissions
 	docker compose build
 
 .PHONY: up
-up: update_submodules setup_directory_permissions
+up: setup_directory_permissions
 	docker compose up -d
 	$(MAKE) import_connections
 .PHONY: stop
