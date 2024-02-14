@@ -3,4 +3,4 @@ work/
 pyspark-test.ipynb
 parquet/
 postgres_dw
-spark_airflow/
+# spark_airflow/
