@@ -4,7 +4,7 @@ all: up
 
 .PHONY: update_submodules
 update_submodules:
-	@if [ ! -d "spark_airflow" ]; then \
+	@if [ ! -d "spark_airflow/*" ]; then \
 		git submodule update --init --recursive; \
 	else \
 		git submodule update --remote --merge; \
