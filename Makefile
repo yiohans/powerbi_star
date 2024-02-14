@@ -34,7 +34,6 @@ import_connections: setup_directory_permissions
 .PHONY: build
 build: update_submodules setup_directory_permissions
 	docker compose build
-	$(MAKE) import_connections
 
 .PHONY: up
 up: update_submodules setup_directory_permissions
